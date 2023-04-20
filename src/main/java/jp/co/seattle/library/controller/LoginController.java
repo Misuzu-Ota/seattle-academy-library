@@ -43,12 +43,12 @@ public class LoginController {
 
 		// ユーザーが存在すればログイン、存在しなければエラー(タスク２)
 		if (selectedUserInfo != null) {
-			return "redirect:/home";
-		} else {
-			model.addAttribute("errorMessage", "メールアドレスとパスワードが一致しません。");
-			return "login";
+ 			return "redirect:/home";
+ 		} else {
+ 			model.addAttribute("errorMessage", "メールアドレスとパスワードが一致しません。");
+ 			return "login";
 
-		}
-
+ 		}
+		
 	}
 }
