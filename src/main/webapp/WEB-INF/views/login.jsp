@@ -31,6 +31,8 @@
             </div>
             <div class="authorization_navi">
                 <label class="authorization_text">まだアカウントをお持ちでないですか？</label> <a class="authorization_link marker" href="<%=request.getContextPath()%>/newAccount">アカウント作成</a>
+                <c:if test="${!empty errorMessage}">
+                    <label href="resetpassword.jsp">パスワードを忘れた場合はこちら</label>
             </div>
         </div>
         <footer>
